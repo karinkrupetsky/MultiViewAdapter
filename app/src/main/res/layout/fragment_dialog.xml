@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:background="@drawable/selector">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add this picture to the Favorite list! "
+        android:fontFamily="@font/indie_flower"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:background="@drawable/selector2"
+        android:layout_margin="15dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/dialog_photo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="@drawable/selector2"
+        android:layout_margin="20sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp">
+        <ImageButton
+            android:src="@drawable/favorite_icon"
+            android:id="@+id/dialog_btn_favorite"
+            android:layout_width="50dp"
+            android:layout_height="50sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/selector2"
+            android:layout_margin="5dp"
+            android:text="Add Favorite"/>
+
+        <Button
+            android:id="@+id/dialog_btn_favorite_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:text="Remove Favorite"
+            android:fontFamily="@font/indie_flower"
+            android:background="@drawable/selector2"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:src="@drawable/close_icon"
+            android:id="@+id/dialog_btn_close"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector2"
+            android:text="close"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
